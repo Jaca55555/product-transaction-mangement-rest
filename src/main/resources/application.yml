@@ -1,0 +1,20 @@
+server:
+    port: 8084
+spring:
+    datasource:
+        password: jaca55555
+        url: jdbc:postgresql://localhost:5432/product-transaction-mangement-rest
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+logging:
+    file:
+        name: ./logs/application.log
+        max-size: 100MB
+
+
+
+greeting:
+    welcome: Project started on ${server.port} port
